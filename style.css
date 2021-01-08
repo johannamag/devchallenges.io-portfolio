@@ -1,1 +1,87 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
+:root {
+  --green: #002626;
+  --light: #efe7da;
+  --pink: #ff9595;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #0e4749;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: var(--light);
+}
+
+main {
+  width: 100%;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  padding: 70px 20px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 35px;
+}
+
+.profile {
+  grid-column: 1 / 6;
+  width: 100%;
+  display: flex;
+  padding: 22px;
+  background-color: var(--green);
+  border-radius: 12px;
+  box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.12);
+}
+
+.profile-img {
+  width: 270px;
+  border-radius: 12px;
+  margin-right: 30px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+}
+
+.job {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  opacity: 0.8;
+}
+
+.contact {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  opacity: 0.8;
+}
+
+.profile-desc {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
