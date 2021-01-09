@@ -32,8 +32,8 @@ main {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr), 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 120px 1fr 1fr;
   grid-gap: 35px;
 }
 
@@ -294,4 +294,41 @@ main {
   font-size: 16px;
   line-height: 20px;
   opacity: 0.8;
+}
+
+.btns {
+  grid-column: 1 / 6;
+}
+
+.project-filters {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.btn-container {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 8px 20px;
+  background-color: transparent;
+  border: 1px solid var(--light);
+  border-radius: 12px;
+  color: var(--light);
+  outline: none;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--light);
+  color: var(--green);
+  border-color: var(--light);
+}
+
+.active {
+  border-color: var(--pink);
+  color: var(--green);
+  background-color: var(--pink);
 }
