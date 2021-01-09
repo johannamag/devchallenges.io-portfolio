@@ -255,3 +255,43 @@ main {
   line-height: 20px;
   opacity: 0.8;
 }
+
+.experiences {
+  grid-column: 3 / 6;
+  grid-row: 4 / 6;
+}
+
+.experience {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 45px;
+}
+
+.experience:last-child {
+  margin-bottom: 0;
+}
+
+.experience-img {
+  width: 120px;
+  margin-right: 40px;
+}
+
+.experience-time {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+
+.experience-job {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.experience-desc {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  opacity: 0.8;
+}
