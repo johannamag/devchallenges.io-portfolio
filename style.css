@@ -208,3 +208,50 @@ main {
   border-bottom: 1px solid var(--pink);
   color: var(--light);
 }
+
+.hobbies {
+  grid-column: 1 / 3;
+  grid-row: 3 / 6;
+}
+
+.hobbies-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 25px;
+}
+
+.hobbies-cards {
+  height: 93%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hobbies-card {
+  margin-top: auto;
+}
+
+.hobbies-card:first-child {
+  margin-top: 0;
+}
+
+.hobbies-img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.hobbies-name {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.hobbies-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  opacity: 0.8;
+}
